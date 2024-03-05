@@ -15,6 +15,7 @@ pipeline{
     stage('Deploy') {
       steps {
         echo 'Deploy'
+         sh 'g++ main2.cpp -o output'
       }
     }
   }
